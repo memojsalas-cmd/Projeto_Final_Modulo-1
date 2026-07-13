@@ -17,7 +17,7 @@ FINAL_FILE = FINAL_DIR / "kc_house_final.csv"
 FIGURES_DIR = ROOT_DIR / "outputs" / "figures"
 
 MODEL_DIR = ROOT_DIR / "models" / "v1"
-MODEL_FILE = MODEL_DIR / "modelo_regressao_v1.pkl"
+MODEL_FILE = MODEL_DIR / "modelo_v1.pkl"
 METRICS_FILE = MODEL_DIR / "metricas_v1.json"
 
 TARGET_COL = "price"
