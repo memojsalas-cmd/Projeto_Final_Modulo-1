@@ -1,6 +1,6 @@
 {
   "versao": "v1",
-  "modelo_salvo": "Regressão Linear",
+  "modelo_salvo": "KNN",
   "data_treinamento": "2026-07-15",
   "treinado_com": "100% da base (treino + teste) - retreino final feito na Fase 6a, após a avaliação honesta da Fase 5",
   "features_utilizadas": [
@@ -37,10 +37,10 @@
       "R2": 0.768062628307028
     },
     "teste": {
-      "MAE": 108991.01297171185,
-      "MSE": 36736282141.08586,
-      "RMSE": 191667.1128312989,
-      "R2": 0.7569977439470363
+      "MAE": 93921.17065309585,
+      "MSE": 35586806900.2762,
+      "RMSE": 188644.65775705443,
+      "R2": 0.7646012645134623
     }
   }
 }
