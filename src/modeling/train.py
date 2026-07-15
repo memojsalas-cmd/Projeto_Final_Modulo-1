@@ -1,5 +1,5 @@
 """
-Treino, avaliação e persistência do modelo de regressão linear (Fases 5 e 6).
+Treino, avaliação e persistência dos modelos (Fases 5 e 6).
 """
 import json
 import joblib
