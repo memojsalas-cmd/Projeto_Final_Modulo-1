@@ -12,12 +12,12 @@ A estimativa baseia-se nas características físicas e de localização das prop
 •	 Dimensões (Shape): 21.613 linhas e 21 colunas.   
 •	 Valores Nulos: O dataset é denso, apresentando apenas 2 valores nulos na coluna sqft_above.   
 
-** Análise Exploratória de Dados (EDA) - Variável Alvo
-•	A variável alvo da predição é o preço de venda (price). 
-•	A distribuição dos preços apresenta uma forte assimetria à direita (skew de 4.02). 
-•	Isso ocorre porque há poucas mansões com valores muito altos que puxam a média (US$ 540.088) para muito além da mediana (US$ 450.000). 
+** Análise Exploratória de Dados (EDA) - Variável Alvo  
+•	A variável alvo da predição é o preço de venda (price).   
+•	A distribuição dos preços apresenta uma forte assimetria à direita (skew de 4.02).   
+•	Isso ocorre porque há poucas mansões com valores muito altos que puxam a média (US$ 540.088) para muito além da mediana (US$ 450.000).   
 •	Esse comportamento é esperado no mercado imobiliário, mas serve de alerta indicando que a métrica RMSE será sensível a esses valores extremos 
-no momento de avaliar os modelos. 
+no momento de avaliar os modelos.   
 
 📂 Organização do Código e Estrutura do Projeto
 Para manter o Jupyter Notebook focado exclusivamente na análise e no porquê de cada tomada de decisão, o código foi organizado de forma modular. As funções repetitivas foram extraídas para módulos Python reaproveitáveis dentro da pasta src/. 
