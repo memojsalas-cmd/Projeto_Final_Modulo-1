@@ -5,6 +5,7 @@ Este repositório contém um Projeto didático cujo objetivo principal é resolv
 A estimativa baseia-se nas características físicas e de localização das propriedades. Criar uma predição de preço confiável é de grande importância, pois ajuda compradores, vendedores, corretores e bancos (em processos de financiamento) a tomarem decisões embasadas, evitando a superavaliação ou subavaliação de um imóvel. 
 
 📊 Dataset Utilizado
+
 •	Arquivo: kc_house_data.csv 
 •	Contexto: O conjunto de dados descreve o mercado imobiliário do condado de King County (onde fica a cidade de Seattle, EUA). 
 •	Tamanho: Aproximadamente 21 mil registros de vendas de imóveis ocorridas entre os anos de 2014 e 2015. 
