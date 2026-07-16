@@ -1,7 +1,7 @@
 ## Precificação de Imóveis (King County, EUA)
 
 📌 Sobre o Projeto  
-Este repositório contém um Projeto didático cujo objetivo principal é resolver um problema preditivo de regressão: estimar o preço de venda (price) de imóveis, em dólares americanos (USD), comparando o desempenho entre um modelo de Regressão Linear e um modelo KNN.   
+Este repositório contém um Projeto didático cujo objetivo principal é resolver um problema preditivo de regressão: estimar o preço de venda (price) de imóveis, em dólares americanos (USD), comparando o desempenho entre um modelo de Regressão Linear e um modelo KNN.     
 A estimativa baseia-se nas características físicas e de localização das propriedades. Criar uma predição de preço confiável é de grande importância, pois ajuda compradores, vendedores, corretores e bancos (em processos de financiamento) a tomarem decisões embasadas, evitando a superavaliação ou subavaliação de um imóvel. 
 
 📊 Dataset Utilizado
