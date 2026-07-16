@@ -1,13 +1,35 @@
-# Regressão Linear — Previsão do Preço de Imóveis
+## Precificação de Imóveis (King County, EUA)
 
-Projeto didático de ciência de dados que demonstra o pipeline de uma regressão linear: EDA, limpeza de dados, feature engineering, preparação para modelagem, modelagem e avaliação.
+📌 Sobre o Projeto
+Este repositório contém um Projeto didático cujo objetivo principal é resolver um problema preditivo de regressão: estimar o preço de venda (price) de imóveis, em dólares americanos (USD), comparando o desempenho entre um modelo de Regressão Linear e um modelo KNN. 
+A estimativa baseia-se nas características físicas e de localização das propriedades. Criar uma predição de preço confiável é de grande importância, pois ajuda compradores, vendedores, corretores e bancos (em processos de financiamento) a tomarem decisões embasadas, evitando a superavaliação ou subavaliação de um imóvel. 
 
-**Base de dados:** King County House Sales (Seattle, EUA) — 21.613 vendas de imóveis (2014–2015)  
-**Modelo:** Regressão linear (`LinearRegression` do scikit-learn) sobre 23 variáveis (features físicas do imóvel + faixa de preço do zipcode, com escalonamento via `StandardScaler`), prevendo `price` diretamente em USD  
-**R² (teste):** ~0,757 · **MAE (teste):** ~US$ 108.991
+📊 Dataset Utilizado
+•	Arquivo: kc_house_data.csv 
+•	Contexto: O conjunto de dados descreve o mercado imobiliário do condado de King County (onde fica a cidade de Seattle, EUA). 
+•	Tamanho: Aproximadamente 21 mil registros de vendas de imóveis ocorridas entre os anos de 2014 e 2015. 
+•	Dimensões (Shape): 21.613 linhas e 21 colunas. 
+•	Valores Nulos: O dataset é denso, apresentando apenas 2 valores nulos na coluna sqft_above. 
+
+** Análise Exploratória de Dados (EDA) - Variável Alvo
+•	A variável alvo da predição é o preço de venda (price). 
+•	A distribuição dos preços apresenta uma forte assimetria à direita (skew de 4.02). 
+•	Isso ocorre porque há poucas mansões com valores muito altos que puxam a média (US$ 540.088) para muito além da mediana (US$ 450.000). 
+•	Esse comportamento é esperado no mercado imobiliário, mas serve de alerta indicando que a métrica RMSE será sensível a esses valores extremos 
+no momento de avaliar os modelos. 
+
+📂 Organização do Código e Estrutura do Projeto
+Para manter o Jupyter Notebook focado exclusivamente na análise e no porquê de cada tomada de decisão, o código foi organizado de forma modular. As funções repetitivas foram extraídas para módulos Python reaproveitáveis dentro da pasta src/. 
+A estrutura de scripts de apoio é a seguinte:
+
+•	src/dataset.py: Lida com o carregamento dos dados brutos. 
+•	src/features.py: Responsável pela limpeza dos dados, tratamento de outliers e engenharia de atributos (feature engineering). 
+•	src/plots.py: Agrupa as funções dedicadas à visualização de dados (gráficos). 
+•	src/modeling/train.py: Concentra a lógica de treino, avaliação e salvamento do modelo preditivo. 
+•	src/config.py: Armazena os parâmetros centrais e os caminhos (paths) de diretórios do projeto. 
+
 
 ---
-
 ## Pipeline
 
 | Fase | Descrição | Resultado |
@@ -68,4 +90,4 @@ jupyter notebook notebooks/dataview_precos.ipynb
 
 ## Melhorias futuras
 
-- **Empacotar o pré-processamento com o modelo:** hoje `models/v1/modelo_regressao_v1.pkl` salva só o `LinearRegression` treinado (retreinado com 100% dos dados na Fase 6). O `StandardScaler` e o mapeamento de zipcode→faixa (`fit_zipcode_faixas`/`apply_zipcode_faixas` em `src/features.py`) usados nesse retreino final não são salvos junto, eles existem apenas em memória durante a execução do notebook. Ou seja, para usar o modelo e prever em dados novos seria necessário recalcular esse pré-processamento manualmente nos dados novos, reproduzindo exatamente os mesmos passos. O ideal é migrar para um `sklearn.Pipeline`/`ColumnTransformer` que inclua encoding, escalonamento e modelo num único objeto salvo, permitindo carregar o pipeline completo e prever diretamente a partir de dados novos.
+
