@@ -12,7 +12,8 @@ A estimativa baseia-se nas características físicas e de localização das prop
 •	 Dimensões (Shape): 21.613 linhas e 21 colunas.   
 •	 Valores Nulos: O dataset é denso, apresentando apenas 2 valores nulos na coluna sqft_above.   
 
-** Análise Exploratória de Dados (EDA) - Variável Alvo  
+** Análise Exploratória de Dados (EDA) - Variável Alvo
+
 •	A variável alvo da predição é o preço de venda (price).   
 •	A distribuição dos preços apresenta uma forte assimetria à direita (skew de 4.02).   
 •	Isso ocorre porque há poucas mansões com valores muito altos que puxam a média (US$ 540.088) para muito além da mediana (US$ 450.000).   
@@ -20,14 +21,16 @@ A estimativa baseia-se nas características físicas e de localização das prop
 no momento de avaliar os modelos.   
 
 📂 Organização do Código e Estrutura do Projeto
+
 Para manter o Jupyter Notebook focado exclusivamente na análise e no porquê de cada tomada de decisão, o código foi organizado de forma modular. As funções repetitivas foram extraídas para módulos Python reaproveitáveis dentro da pasta src/. 
+
 A estrutura de scripts de apoio é a seguinte:
 
-•	src/dataset.py: Lida com o carregamento dos dados brutos. 
-•	src/features.py: Responsável pela limpeza dos dados, tratamento de outliers e engenharia de atributos (feature engineering). 
-•	src/plots.py: Agrupa as funções dedicadas à visualização de dados (gráficos). 
-•	src/modeling/train.py: Concentra a lógica de treino, avaliação e salvamento do modelo preditivo. 
-•	src/config.py: Armazena os parâmetros centrais e os caminhos (paths) de diretórios do projeto. 
+•	src/dataset.py: Lida com o carregamento dos dados brutos.   
+•	src/features.py: Responsável pela limpeza dos dados, tratamento de outliers e engenharia de atributos (feature engineering).   
+•	src/plots.py: Agrupa as funções dedicadas à visualização de dados (gráficos).   
+•	src/modeling/train.py: Concentra a lógica de treino, avaliação e salvamento do modelo preditivo.   
+•	src/config.py: Armazena os parâmetros centrais e os caminhos (paths) de diretórios do projeto.   
 
 
 ---
