@@ -6,11 +6,11 @@ A estimativa baseia-se nas características físicas e de localização das prop
 
 📊 Dataset Utilizado
 
-•	Arquivo: kc_house_data.csv 
-•	Contexto: O conjunto de dados descreve o mercado imobiliário do condado de King County (onde fica a cidade de Seattle, EUA). 
-•	Tamanho: Aproximadamente 21 mil registros de vendas de imóveis ocorridas entre os anos de 2014 e 2015. 
-•	Dimensões (Shape): 21.613 linhas e 21 colunas. 
-•	Valores Nulos: O dataset é denso, apresentando apenas 2 valores nulos na coluna sqft_above. 
+•	 Arquivo: kc_house_data.csv 
+•	 Contexto: O conjunto de dados descreve o mercado imobiliário do condado de King County (onde fica a cidade de Seattle, EUA). 
+•	 Tamanho: Aproximadamente 21 mil registros de vendas de imóveis ocorridas entre os anos de 2014 e 2015. 
+•	 Dimensões (Shape): 21.613 linhas e 21 colunas. 
+•	 Valores Nulos: O dataset é denso, apresentando apenas 2 valores nulos na coluna sqft_above. 
 
 ** Análise Exploratória de Dados (EDA) - Variável Alvo
 •	A variável alvo da predição é o preço de venda (price). 
