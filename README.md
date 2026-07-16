@@ -32,7 +32,7 @@ Projeto didático de ciência de dados que demonstra o pipeline de uma regressã
 │
 ├── models/
 │   └── v1/
-│       ├── modelo_regressao_v1.pkl 
+│       ├── modelo_v1.pkl.pkl 
 │       └── metricas_v1.json        
 │
 ├── notebooks/
