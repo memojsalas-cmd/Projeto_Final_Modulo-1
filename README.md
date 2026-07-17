@@ -1,6 +1,6 @@
 ## Precificação de Imóveis (King County, EUA)
 
-📌 Sobre o Projeto  
+--Sobre o Projeto  
 
 Este repositório contém um Projeto didático cujo objetivo principal é resolver um problema preditivo de regressão: estimar o preço de venda (price) de imóveis, em dólares americanos (USD), comparando o desempenho entre um modelo de Regressão Linear e um modelo KNN.   
 
@@ -8,7 +8,7 @@ A estimativa baseia-se nas características físicas e de localização das prop
 pois ajuda compradores, vendedores, corretores e bancos (em processos de financiamento) a tomarem decisões embasadas, evitando a superavaliação ou 
 subavaliação de um imóvel. 
 
-📊 Dataset Utilizado
+--Dataset Utilizado
 
 •	 Arquivo: kc_house_data.csv   
 •	 Contexto: O conjunto de dados descreve o mercado imobiliário do condado de King County (onde fica a cidade de Seattle, EUA).   
@@ -16,7 +16,7 @@ subavaliação de um imóvel.
 •	 Dimensões (Shape): 21.613 linhas e 21 colunas.   
 •	 Valores Nulos: O dataset é denso, apresentando apenas 2 valores nulos na coluna sqft_above.   
 
-** Análise Exploratória de Dados (EDA) - Variável Alvo
+--Análise Exploratória de Dados (EDA) - Variável Alvo
 
 •	A variável alvo da predição é o preço de venda (price).   
 •	A distribuição dos preços apresenta uma forte assimetria à direita (skew de 4.02).   
@@ -24,7 +24,7 @@ subavaliação de um imóvel.
 •	Esse comportamento é esperado no mercado imobiliário, mas serve de alerta indicando que a métrica RMSE será sensível a esses valores extremos 
 no momento de avaliar os modelos.   
 
-📂 Organização do Código e Estrutura do Projeto
+--Organização do Código e Estrutura do Projeto
 
 Para manter o Jupyter Notebook focado exclusivamente na análise e no porquê de cada tomada de decisão, o código foi organizado de forma modular. As funções repetitivas foram extraídas para módulos Python reaproveitáveis dentro da pasta src/. 
 
@@ -98,4 +98,5 @@ jupyter notebook notebooks/dataview_precos.ipynb
 
 ## Melhorias futuras
 
-
+ Teste algoritmos não lineares mais robustos (Random Forest, Gradient Boosting/XGBoost, LightGBM) para capturar melhor as relações 
+ não lineares que hoje nem a Regressão Linear nem a KNN modelam muito bem.
