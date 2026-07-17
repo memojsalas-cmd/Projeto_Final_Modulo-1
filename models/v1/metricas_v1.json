@@ -1,7 +1,7 @@
 {
   "versao": "v1",
   "modelo_salvo": "KNN",
-  "data_treinamento": "2026-07-16",
+  "data_treinamento": "2026-07-17",
   "treinado_com": "100% da base (treino + teste) - retreino final feito na Fase 6a, após a avaliação honesta da Fase 5",
   "features_utilizadas": [
     "bedrooms",
