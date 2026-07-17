@@ -98,5 +98,8 @@ jupyter notebook notebooks/dataview_precos.ipynb
 
 ## Melhorias futuras
 
- Teste algoritmos não lineares mais robustos (Random Forest, Gradient Boosting/XGBoost, LightGBM) para capturar melhor as relações 
+ Teste algoritmos não lineares mais robustos (Random Forest, Gradient Boosting/XGBoost, LightGBM) para capturar melhor as relações
  não lineares que hoje nem a Regressão Linear nem a KNN modelam muito bem.
+
+ Tratar o segmento de imóveis de luxo (onde se concentra a maior dispersão de resíduos) separadamente, talvez com um modelo
+ específico ou uma transformação logarítmica de preços.
