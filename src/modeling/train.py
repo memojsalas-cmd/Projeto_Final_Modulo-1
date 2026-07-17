@@ -12,10 +12,10 @@ from src.config import MODEL_DIR, MODEL_FILE, METRICS_FILE
 
 
 def train_model(X_train: pd.DataFrame, y_train: pd.Series) -> LinearRegression:
-  """Treina uma Regressão Linear simples nos dados de treino."""
-  model = LinearRegression()
-  model.fit(X_train, y_train)
-  return model
+    """Treina uma Regressão Linear simples nos dados de treino."""
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+    return model
 
 
 def train_knn_model(
