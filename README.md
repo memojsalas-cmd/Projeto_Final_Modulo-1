@@ -62,7 +62,7 @@ A estrutura de scripts de apoio é a seguinte:
 │
 ├── models/
 │   └── v1/
-│       ├── modelo_v1.pkl.pkl 
+│       ├── modelo.pkl 
 │       └── metricas_v1.json        
 │
 ├── notebooks/
